@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "Vidusi",
+    "version": "1.0",
+    "description": "Buy without Barriers",
+  
+    "permissions": [
+      "storage",
+      "activeTab",
+      "tabs",
+      "webNavigation"
+    ],
+  
+    "background": {
+      "service_worker": "./scripts/background.js"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["https://www.amazon.com/*","https://www.amazon.in/*"],
+        "js": ["./scripts/injected.js"],
+        "css": ["./style/injected.css"],
+        "run_at": "document_start"
+      }
+    ],
+    "host_permissions":["https://dhruva-api.bhashini.gov.in/services/inference/pipeline"]
+
+  
+}
+  
