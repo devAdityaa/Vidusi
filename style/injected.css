@@ -1,0 +1,12 @@
+#bhasa{
+    background-color: #febd69;
+    display: flex;
+    justify-content: center;
+    color:white;
+    font-family: inherit;
+    align-items: center;
+    border:none;
+}
+#bhasa:hover{
+    background-color: #edb26a;
+}
