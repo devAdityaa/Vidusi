@@ -31,5 +31,17 @@
         res.style.opacity = 0.2;
         
     }
+
+    else if(req.type==='search'){
+        const res = document.querySelector('#search');
+        res.style.opacity = 0.2;
+        const img = document.createElement('img');
+        console.log("URL:")
+        console.log(chrome.runtime.getURL('loader.gif'))
+        img.src = chrome.runtime.getURL('./assets/loader.gif');
+        img.id = 'loader';
+        res.appendChild(img);
+    }
+
     })
 })()

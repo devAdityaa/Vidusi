@@ -53,3 +53,10 @@ if(req.type==='translate'){
     })
 }
 })
+
+chrome.webNavigation.onCompleted.addListener((details)=>{
+
+    if(details.url.includes('amazon.com/s?k=')){
+        chrome.tabs.sendMessage(details.tabId,{type:'search'});
+    }
+});

@@ -10,3 +10,10 @@
 #bhasa:hover{
     background-color: #edb26a;
 }
+#loader{
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:5rem;
+}

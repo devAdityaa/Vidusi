@@ -23,7 +23,13 @@
         "run_at": "document_start"
       }
     ],
-    "host_permissions":["https://dhruva-api.bhashini.gov.in/services/inference/pipeline"]
+    "host_permissions":["https://dhruva-api.bhashini.gov.in/services/inference/pipeline"],
+    "web_accessible_resources": [
+        {
+            "resources": [ "./assets/loader.gif","assets/loader.gif","..assets/loader.gif","loader.gif"],
+            "matches": ["https://www.amazon.com/*" , "https://www.amazon.in/*"]
+          }
+      ]
 
   
 }
