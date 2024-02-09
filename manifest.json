@@ -3,7 +3,9 @@
     "name": "Vidusi",
     "version": "1.0",
     "description": "Buy without Barriers",
-  
+  "action":{
+    "default_popup": "popup.html"
+  },
     "permissions": [
       "storage",
       "activeTab",
